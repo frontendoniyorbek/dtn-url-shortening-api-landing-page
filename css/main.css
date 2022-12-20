@@ -201,13 +201,13 @@ h5 {
 }
 
 .button--small {
-  padding: 0.8rem 2.4rem;
-  font-size: 1.5rem;
-  line-height: 22.5rem;
+  padding: 8px 24px;
+  font-size: 15px;
+  line-height: 22.5px;
 }
 
 .button--big {
-  padding: 1.8rem 4rem 1.6rem;
+  padding: 18px 40px 16px;
 }
 
 .button--rectangle {
@@ -449,6 +449,7 @@ h5 {
 .hero {
   position: relative;
   padding-top: 9.2rem;
+  padding-bottom: 22.2rem;
 }
 @media screen and (max-width: 1100px) {
   .hero {
@@ -458,12 +459,14 @@ h5 {
 @media screen and (max-width: 768px) {
   .hero {
     padding-top: 5rem;
+    padding-bottom: 19.5rem;
     position: static;
   }
 }
 @media screen and (max-width: 375px) {
   .hero {
     padding-top: 3.7rem;
+    padding-bottom: 16.8rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -553,4 +556,169 @@ h5 {
   .hero__text {
     margin-bottom: 3.2rem;
   }
+}
+
+/* INDEX-URL-SHORTNER-FEATURES-WRAPPER */
+.index-url-shortner-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #eff1f7;
+}
+.index-url-shortner-features-wrapper__url-shortner {
+  margin-top: -8.4rem;
+}
+@media screen and (max-width: 375px) {
+  .index-url-shortner-features-wrapper__url-shortner {
+    margin-top: -8rem;
+  }
+}
+
+/* URL-SHORTNER */
+.url-shortner__form {
+  display: flex;
+  padding: 4.8rem 6.4rem;
+  margin-bottom: 2.4rem;
+  border-radius: 1rem;
+  background-color: #4b3f6b;
+  background-image: url(../images/url-shortner-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 768px) {
+  .url-shortner__form {
+    padding: 3.2rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .url-shortner__form {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.4rem;
+  }
+}
+
+.url-shortner__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.4rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+@media screen and (max-width: 620px) {
+  .url-shortner__input-wrapper {
+    margin-right: 0;
+    margin-bottom: 1.8rem;
+  }
+}
+@media screen and (max-width: 620px) {
+  .url-shortner__input-wrapper {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.url-shortner__input {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 1.4rem 3.2rem;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #34313d;
+}
+
+.url-shortner__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: #f46363;
+  color: rgba(244, 99, 99, 0.5);
+}
+
+.url-shortner__error-msg {
+  display: none;
+}
+
+.url-shortner__input:not(:focus):not(:placeholder-shown):invalid ~ .url-shortner__error-msg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-size: 1.6rem;
+  line-height: 1.125;
+  font-weight: 500;
+  font-size: inherit;
+  color: #f46363;
+  letter-spacing: 0.11px;
+}
+
+.url-shortner__results {
+  display: none;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+.url-shortner__results--open {
+  display: block;
+}
+
+.url-shortner__result {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+  border-radius: 5px;
+  letter-spacing: 0.15px;
+  color: #34313d;
+  background-color: #fff;
+}
+@media screen and (max-width: 620px) {
+  .url-shortner__result {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.url-shortner__result:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.url-shortner__orginal-link {
+  width: 100%;
+  margin-right: 2.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 620px) {
+  .url-shortner__orginal-link {
+    margin-right: 0;
+    margin-bottom: 0.6rem;
+  }
+}
+
+.url-shortner__short-link {
+  margin-right: 2.4rem;
+  text-decoration: none;
+  color: #2bd0d0;
+}
+@media screen and (max-width: 620px) {
+  .url-shortner__short-link {
+    margin-right: 0;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.url-shortner__copy-button {
+  min-width: 103px;
+}
+
+.url-shortner__copy-button-copied {
+  background-color: #3a3054;
+}
+
+.hr {
+  background-color: #9e9aa8;
+  color: #9e9aa8;
+  margin-bottom: 0.6rem;
 }/*# sourceMappingURL=main.css.map */

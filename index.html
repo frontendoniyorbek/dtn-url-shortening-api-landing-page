@@ -50,9 +50,9 @@
         <!-- HERO -->
         <div class="hero">
             <div class="hero__container container">
-                <div class="hero__img-wrapper">
+                <!-- <div class="hero__img-wrapper">
                     <img src="./images/working_with_computer.svg" alt="working_with_computer">
-                </div>
+                </div> -->
                 <div class="hero__inner">
                     <h1 class="hero__title">More than just shorter links</h1>
                     <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are
@@ -61,6 +61,58 @@
                 </div>
             </div>
         </div>
+
+        <div class="index-url-shortner-features-wrapper">
+            <div class="index-url-shortner-features-wrapper__url-shortner">
+                <!-- URL-SHORTNER-FORM -->
+                <div class="url-shortner">
+                    <div class="container">
+                        <h2 class="visually-hidden">URL shorter</h2>
+                        <form class="url-shortner__form js-url-shortner-form" action="https://echo.htmlacademy.ru"
+                            method="POST">
+                            <div class="url-shortner__input-wrapper">
+                                <input class="url-shortner__input" type="url" name="url"
+                                    placeholder="Shorten a link here..." aria-label="URL input" required>
+                                <div class="url-shortner__error-msg">Please add a link</div>
+                            </div>
+                            <button class="url-shortner__submit btn button--rectangle-big" type="submit">Shorten
+                                It!</button>
+                        </form>
+
+                        <div class="url-shortner__results">
+                            <div class="url-shortner__result">
+                                <div class="url-shortner__orginal-link">https://www.frontendmentor.io</div>
+                                <hr class="hr">
+                                <a class="url-shortner__short-link" href="#" target="_blank"> https://rel.ink/k4lKyk</a>
+                                <button
+                                    class="url-shortner__copy-button btn button--small button--rectangle js-copy-short-link-button"
+                                    type="button">Copy</button>
+                            </div>
+
+                            <div class="url-shortner__result">
+                                <div class="url-shortner__orginal-link">https://twitter.com/frontendmentor</div>
+                                <hr class="hr">
+                                <a class="url-shortner__short-link" href="#" target="_blank"> https://rel.ink/gxOXp9</a>
+                                <button
+                                    class="url-shortner__copy-button btn button--small button--rectangle js-copy-short-link-button"
+                                    type="button">Copy</button>
+                            </div>
+
+                            <div class="url-shortner__result">
+                                <div class="url-shortner__orginal-link">https://www.linkedin.com/company/frontend-mentor
+                                </div>
+                                <hr class="hr">
+                                <a class="url-shortner__short-link" href="#" target="_blank"> https://rel.ink/gob3X9</a>
+                                <button
+                                    class="url-shortner__copy-button btn button--small button--rectangle js-copy-short-link-button"
+                                    type="button">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <!-- JS -->
     <script src="./js/app.js"></script>
