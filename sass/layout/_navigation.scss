@@ -1,6 +1,8 @@
 .sitenav {
   margin-right: auto;
-
+  @include responsive(m-tablet) {
+    display: none;
+  }
   @include responsive(phone) {
     position: fixed;
     top: 9.6rem;

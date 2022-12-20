@@ -1,9 +1,13 @@
 /* SITE-HEADER */
 .site-header {
-  padding: 48px 0;
+  padding: 4.8rem 0;
   background-color: #fff;
   font-weight: bold;
   line-height: normal;
+
+  @include responsive(phone) {
+    padding: 4rem 0;
+  }
 
   &__container {
     display: flex;
@@ -14,7 +18,7 @@
     margin-right: 4.5rem;
 
     @include responsive(m-tablet) {
-      margin-right: 2rem;
+      margin-right: auto;
     }
   }
 
