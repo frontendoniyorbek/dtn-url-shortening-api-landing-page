@@ -1,0 +1,52 @@
+.btn {
+  display: inline-block;
+  padding: 1.4rem 4rem 1.2rem;
+  border: 0;
+  border-radius: 2.8rem;
+  background-color: $air-color;
+  color: #fff;
+  font-size: 2rem;
+  line-height: normal;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+  background-color: $air-color-hover;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.button--small {
+  padding: 0.8rem 2.4rem;
+  font-size: 1.5rem;
+  line-height: 22.5rem;
+}
+
+.button--big {
+  padding: 1.8rem 4rem 1.6rem;
+}
+
+.button--rectangle {
+  border-radius: 5px;
+}
+
+.button--rectangle-big {
+  border-radius: 10px;
+}
+
+.nav-btn {
+  display: none;
+  @include responsive(phone) {
+    display: block;
+    padding: 1.2rem 10.4rem 0.9rem 10.6rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
