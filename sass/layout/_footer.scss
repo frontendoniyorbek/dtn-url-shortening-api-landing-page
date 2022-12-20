@@ -1,0 +1,139 @@
+/* SITE-FOOTER */
+.site-footer {
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+  background-color: $darg-color;
+  @include responsive(phone) {
+    padding-top: 5.4rem;
+    padding-bottom: 5.6rem;
+  }
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    @include responsive(m-tablet) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__menus {
+    display: flex;
+    margin-left: auto;
+    margin-right: 10.1rem;
+
+    @include responsive(medium) {
+      margin-right: 6.8rem;
+    }
+    @include responsive(m-tablet) {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 4.6rem;
+      margin-top: 4.9rem;
+    }
+    @include responsive(phone) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__menu {
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__menu:not(:last-child) {
+    margin-right: 9rem;
+    @include responsive(medium) {
+      margin-right: 5.8rem;
+    }
+    @include responsive(phone) {
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__menu-title {
+    margin-bottom: 2.2rem;
+    color: #fff;
+  }
+
+  &__menu-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__menu-item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: #bfbfbf;
+    letter-spacing: -0.234375px;
+    font-size: 1.5rem;
+    line-height: 1.47;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $air-color;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.socials__list {
+  display: flex;
+  list-style: none;
+  @include responsive(tablet) {
+    flex-direction: column;
+  }
+  @include responsive(m-tablet) {
+    flex-direction: row;
+  }
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 2.4rem;
+  @include responsive(tablet) {
+    margin-right: 0;
+    margin-bottom: 2.4rem;
+  }
+  @include responsive(m-tablet) {
+    margin-right: 2.4rem;
+    margin-bottom: 0;
+  }
+}
+
+.socials__link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.socials__link:hover {
+  color: $air-color;
+}
+
+.socials__link:active {
+  opacity: 0.6;
+}
