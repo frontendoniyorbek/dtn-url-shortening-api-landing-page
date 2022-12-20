@@ -92,6 +92,20 @@
       margin-bottom: 9.2rem;
     }
   }
+
+  &__item:nth-child(2) {
+    margin-top: 44px;
+    @include responsive(m-tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &__item:nth-child(3) {
+    margin-top: 88px;
+    @include responsive(m-tablet) {
+      margin-top: 0;
+    }
+  }
 }
 
 .index-feature {
@@ -105,52 +119,38 @@
   @include responsive(phone) {
     padding: 7.7rem 3.2rem 3.2rem;
   }
-}
 
-.index-feature__icon-wrapper {
-  position: absolute;
-  left: 32px;
-  top: -44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 88px;
-  height: 88px;
-  background-color: $navbar-bg;
-  border-radius: 50%;
-  @include responsive(m-tablet) {
-    left: 44%;
+  &__icon-wrapper {
+    position: absolute;
+    left: 32px;
+    top: -44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 88px;
+    background-color: $navbar-bg;
+    border-radius: 50%;
+    @include responsive(m-tablet) {
+      left: 44%;
+    }
+    @include responsive(m-phone) {
+      left: 41%;
+    }
   }
-  @include responsive(m-phone) {
-    left: 41%;
-  }
-}
 
-.index-features__item:nth-child(2) {
-  margin-top: 44px;
-  @include responsive(m-tablet) {
+  &__title {
     margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    color: $title-color;
   }
-}
 
-.index-features__item:nth-child(3) {
-  margin-top: 88px;
-  @include responsive(m-tablet) {
-    margin-top: 0;
+  &__info {
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0;
   }
-}
-
-.index-feature__title {
-  margin-top: 0;
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 33px;
-  color: $title-color;
-}
-
-.index-feature__info {
-  font-size: 15px;
-  line-height: 26px;
-  margin: 0;
 }

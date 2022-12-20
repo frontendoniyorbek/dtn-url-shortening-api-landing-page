@@ -1,0 +1,25 @@
+/* CTA */
+.cta {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  background-image: url(../images/cta-bg.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    color: #fff;
+    @include responsive(phone) {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
